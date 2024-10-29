@@ -1,9 +1,9 @@
-function Feedback() {
+function Feedback({ feedback }) {
   return (
     <div>
-      <p>Good: 0</p>
-      <p>Neutral: 0</p>
-      <p>Bad: 0</p>
+      <p>Good:{feedback.good}</p>
+      <p>Neutral:{feedback.neutral}</p>
+      <p>Bad:{feedback.bad}</p>
     </div>
   );
 }
