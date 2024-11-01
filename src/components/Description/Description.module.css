@@ -1,0 +1,10 @@
+.descriptionBox {
+  margin-bottom: 20px;
+  background-color: rgb(248, 212, 177);
+  border: 1px solid chocolate;
+  padding: 10px;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}

@@ -4,7 +4,8 @@ import Description from "./Description/Description";
 import Options from "./Options/Options";
 import Feedback from "./Feedback/Feedback";
 import Notification from "./Notification/Notification";
-
+import "modern-normalize";
+import "./App.css";
 function App() {
   const [feedback, setFeedback] = useState({
     good: 0,
@@ -20,6 +21,7 @@ function App() {
   };
 
   const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
+  const positiveFeedback = Math.round((feedback.good / totalFeedback) * 100);
 
   const feedbackReset = () => {
     setFeedback({
@@ -29,15 +31,23 @@ function App() {
     });
   };
   return (
-    <>
+    <div>
       <Description />
       <Options
         updateFeedback={updateFeedback}
         feedbackReset={feedbackReset}
         totalFeedback={totalFeedback}
       />
-      {totalFeedback > 0 ? <Feedback feedback={feedback} /> : <Notification />}
-    </>
+      {totalFeedback > 0 ? (
+        <Feedback
+          feedback={feedback}
+          totalFeedback={totalFeedback}
+          positiveFeedback={positiveFeedback}
+        />
+      ) : (
+        <Notification />
+      )}
+    </div>
   );
 }
 

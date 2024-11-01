@@ -1,6 +1,8 @@
+import css from "./Description.module.css";
+
 function Description() {
   return (
-    <div>
+    <div className={css.descriptionBox}>
       <h1>Sip Happens Café</h1>
       <p>
         Please leave your feedback about our service by selecting one of the

@@ -1,0 +1,13 @@
+#root {
+  max-width: 800px;
+  min-height: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 50px;
+  text-align: center;
+  border: 1px solid chocolate;
+  background-color: rgb(238, 186, 118);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,18 @@
+.optionBox {
+  margin-bottom: 20px;
+}
+
+.feedbackBtn {
+  background-color: rgb(248, 212, 177);
+
+  margin-right: 10px;
+  border: transparent;
+  border-radius: 5px;
+  border: 1px solid chocolate;
+
+  padding: 10px;
+}
+
+.feedbackBtn:hover {
+  background-color: rgb(227, 144, 60);
+}
